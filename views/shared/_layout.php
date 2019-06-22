@@ -21,7 +21,7 @@
 
 
     <script src="content/js/vendor/modernizr-3.7.1.min.js"></script>
-    <script src="content/js/vendor/jquery-3.3.1.min.js"></script>
+    <script src="content/js/vendor/jquery-3.4.1.min.js"></script>
     <script src="content/js/plugins.js"></script>
     <script src="content/js/main.js"></script>
 
