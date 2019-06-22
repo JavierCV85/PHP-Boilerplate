@@ -7,3 +7,4 @@ Boilerplate PHP para iniciar proyectos
 - render head desde controlador (metatags, styles, scripts...)
 - revisar el tema de pasar parametros
 - add favicon
+- crear modelo de ejemplo
