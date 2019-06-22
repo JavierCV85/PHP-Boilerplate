@@ -25,10 +25,10 @@
 		}
 
 		switch ($url[0]){
-			case "/javier/Boilerplate/page1":
+			case "/javier/github/PHP-Boilerplate/page1":
 				pageLoad("controllerExample","view1", $parameters);
 				break;
-			case "/javier/Boilerplate/page2":
+			case "/javier/github/PHP-Boilerplate/page2":
 				pageLoad("controllerExample","view2", $parameters);
 				break;
 			default:
@@ -39,9 +39,7 @@
 
 	function pageLoad($controller, $view, $parameters){
 		include("controllers/".$controller.".php");
-		include("views/shared/head.php");
-		include("views/".$view.".php");
-		include("views/shared/foot.php");
+		include("views/shared/_layout.php");
 	}
 
 	getPage();
