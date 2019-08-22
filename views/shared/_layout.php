@@ -7,7 +7,9 @@
       <meta name="description" content="<?= $description; ?>">
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
+      <link rel="shortcut icon" href="content/img/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="content/img/favicon.ico" type="image/x-icon">
+      
       <link rel="stylesheet" href="content/css/normalize.css">
       <link rel="stylesheet" href="content/css/fontawesome-all.css">
       <link rel="stylesheet" href="content/css/main.min.css">
