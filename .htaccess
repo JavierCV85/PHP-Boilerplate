@@ -384,13 +384,6 @@ AddDefaultCharset utf-8
     RewriteRule ^ %{ENV:PROTO}://%1%{REQUEST_URI} [R=301,L]
 </IfModule>
 
-# redirije todo el trafico a index.php
-<IfModule mod_rewrite.c>
-    RewriteEngine on
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^(.*)$ ./index.php?path=$1 [NC,L,QSA]
-</IfModule>
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -407,6 +400,13 @@ AddDefaultCharset utf-8
 #     RewriteCond %{SERVER_ADDR} !=::1
 #     RewriteRule ^ %{ENV:PROTO}://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 # </IfModule>
+
+# ELIMINA EL INDEX.PHP DE LA URL
+ <IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . index.php [L]
+ </IfModule>
 
 # ######################################################################
 # # SECURITY                                                           #

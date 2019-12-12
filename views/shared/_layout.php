@@ -9,7 +9,7 @@
 
       <link rel="shortcut icon" href="content/img/favicon.ico" type="image/x-icon">
       <link rel="icon" href="content/img/favicon.ico" type="image/x-icon">
-      
+
       <link rel="stylesheet" href="content/css/normalize.css">
       <link rel="stylesheet" href="content/css/fontawesome-all.css">
       <link rel="stylesheet" href="content/css/main.min.css">
@@ -25,7 +25,7 @@
     <!-- start: Your site / app-->
 
     <?php
-      include("views/".$view.".php");
+      include("views/".$ar['view'].".php");
     ?>
 
     <!-- end: Your site / app-->
