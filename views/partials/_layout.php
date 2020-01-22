@@ -12,8 +12,8 @@
 
       <link rel="canonical" href="https://www.YourSite.com">
 
-      <link rel="stylesheet" href="content/css/normalize.css">
-      <link rel="stylesheet" href="content/css/main.min.css">
+      <link rel="stylesheet" href="content/css/normalize.css" type="text/css">
+      <link rel="stylesheet" href="content/css/main.min.css" type="text/css">
 
       <?php
         if ($styles != null && $styles != ""){

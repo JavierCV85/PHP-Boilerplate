@@ -5,8 +5,8 @@
 
 	//HOME
 	$app->get('/', function (Request $req, Response $res, array $ar) use($app){
-		include("controllers/controllerExample.php");
 		$ar['view'] = "home";
+		include("controllers/controllerExample.php");
 		include("views/partials/_layout.php");
   });
 
