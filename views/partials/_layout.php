@@ -7,13 +7,13 @@
       <meta name="description" content="<?= $description; ?>">
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <link rel="shortcut icon" href="content/img/favicon.ico" type="image/x-icon">
-      <link rel="icon" href="content/img/favicon.ico" type="image/x-icon">
+      <link rel="shortcut icon" href="<?= $GLOBALS['BASEURL'] ?>content/img/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="<?= $GLOBALS['BASEURL'] ?>content/img/favicon.ico" type="image/x-icon">
 
       <link rel="canonical" href="https://www.YourSite.com">
 
-      <link rel="stylesheet" href="content/css/normalize.css" type="text/css">
-      <link rel="stylesheet" href="content/css/main.min.css" type="text/css">
+      <link rel="stylesheet" href="<?= $GLOBALS['BASEURL'] ?>content/css/normalize.css" type="text/css">
+      <link rel="stylesheet" href="<?= $GLOBALS['BASEURL'] ?>content/css/main.min.css" type="text/css">
 
       <?php
         if ($styles != null && $styles != ""){
@@ -30,10 +30,10 @@
     ?>
 
     <!-- end: Your site / app-->
-    <script src="content/js/vendor/modernizr-3.7.1.min.js"></script>
-    <script src="content/js/vendor/jquery-3.4.1.min.js"></script>
-    <script src="content/js/plugins.js"></script>
-    <script src="content/js/main.js"></script>
+    <script src="<?= $GLOBALS['BASEURL'] ?>content/js/vendor/modernizr-3.7.1.min.js"></script>
+    <script src="<?= $GLOBALS['BASEURL'] ?>content/js/vendor/jquery-3.4.1.min.js"></script>
+    <script src="<?= $GLOBALS['BASEURL'] ?>content/js/plugins.js"></script>
+    <script src="<?= $GLOBALS['BASEURL'] ?>content/js/main.js"></script>
 
     <?php
       if ($scripts != null && $scripts != ""){
