@@ -412,13 +412,10 @@ AddDefaultCharset utf-8
 # </IfModule>
 
 # ELIMINA EL INDEX.PHP DE LA URL
+# ignora los archivos que acaben con las extensiones que se indican en el condicional.
  <IfModule mod_rewrite.c>
   RewriteEngine On
-  RewriteCond %{REQUEST_URI} !.css$ [NC]
-  RewriteCond %{REQUEST_URI} !.js$ [NC]
-  RewriteCond %{REQUEST_URI} !.png$ [NC]
-  RewriteCond %{REQUEST_URI} !.jpg$ [NC]
-  RewriteCond %{REQUEST_URI} !.ico$ [NC]
+  RewriteCond %{REQUEST_URI} !(\.css|\.js|\.png|\.jpg|\.ico|\.xml|\.txt) [NC]
   RewriteRule . index.php [L]
  </IfModule>
 
