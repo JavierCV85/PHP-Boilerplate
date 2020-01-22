@@ -1,5 +1,6 @@
-//FONTS ------------------------------------------------------------------------
+//IMPORTS ----------------------------------------------------------------------
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import "fontawesome-all.scss";
 
 //VARIABLES --------------------------------------------------------------------
 $background: #ffffff;
@@ -12,56 +13,6 @@ a{ color:inherit; text-decoration:none; }
 ul, li{ list-style:none; margin:0; padding:0; }
 p, h1, h2, h3, h4, h5, h6{ margin:0; }
 input:focus, select:focus, textarea:focus, button:focus { outline: none !important; }
-//GRID -------------------------------------------------------------------------
-$_gap:20px;
-$_marginbottom:20px;
-$_breackPoint-Large:1280px;
-$_breackPoint-Medium:1024px;
-$_breackPoint-Small:640px;
-.container{
-  &{
-    display:block;
-    position:relative;
-    margin:0 0 25px;
-    width:100%;
-  }
-  .row{
-    &{
-      display:block;
-      position:relative;
-      margin:0;
-      font-size:0;
-    }
-    .col{
-      &{
-        position:relative;
-        display:inline-block;
-        vertical-align:top;
-        box-sizing: border-box;
-        font-size:initial;
-        margin:0 ($_gap/2) $_marginbottom;
-      }
-      @for $i from 1 through 100{
-        &.col-#{$i}{ width:calc(#{$i}% - #{$_gap}); }
-      }
-      @media screen and (max-width:$_breackPoint-Large){
-        @for $i from 1 through 100{
-          &.col-L#{$i}{ width:calc(#{$i}% - #{$_gap}); }
-        }
-      }
-      @media screen and (max-width:$_breackPoint-Medium){
-        @for $i from 1 through 100{
-          &.col-M#{$i}{ width:calc(#{$i}% - #{$_gap}); }
-        }
-      }
-      @media screen and (max-width:$_breackPoint-Small){
-        @for $i from 1 through 100{
-          &.col-S#{$i}{ width:calc(#{$i}% - #{$_gap}); }
-        }
-      }
-    }
-  }
-}
 //PAGE -------------------------------------------------------------------------
 
 
