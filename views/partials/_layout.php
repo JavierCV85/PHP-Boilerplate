@@ -10,8 +10,9 @@
       <link rel="shortcut icon" href="content/img/favicon.ico" type="image/x-icon">
       <link rel="icon" href="content/img/favicon.ico" type="image/x-icon">
 
+      <link rel="canonical" href="https://www.YourSite.com">
+
       <link rel="stylesheet" href="content/css/normalize.css">
-      <link rel="stylesheet" href="content/css/fontawesome-all.css">
       <link rel="stylesheet" href="content/css/main.min.css">
 
       <?php
